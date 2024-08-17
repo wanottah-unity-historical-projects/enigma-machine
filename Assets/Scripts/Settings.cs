@@ -12,7 +12,7 @@ using UnityEngine;
 public class Settings : MonoBehaviour
 {
     // number of enigma components
-    public const int ENIGMA_COMPONENTS = 7; // 6
+    public const int NUMBER_OF_COMPONENTS = 7; // 9
     // COMPONENT_NAMES = ["Reflector", "Left", "Middle", "Right", "Plugboard", "Lampboard", "Keyboard"];
 
 
@@ -45,7 +45,7 @@ public class Settings : MonoBehaviour
     public const string ROTOR_V_TURNOVER_NOTCH_POSITION = "Z";
 
 
-    // reflectors wiring configurations
+    // reflectors
     public const int NUMBER_OF_REFLECTORS = 3;
 
     // reflector wiring configurations
@@ -66,6 +66,14 @@ public class Settings : MonoBehaviour
     // COMPONENT_SPACING = 100;
 
 
+    // signal columns
+    // 1 x keyboard component
+    // 1 x lampboard component
+    // 2 x plugboard component
+    // 2 x 5 rotor components
+    // 2 x reflector component
+    public const int SIGNAL_COLUMNS = 16;
+    public const int NUMBER_OF_SIGNAL_CONNECTOR_POINTS = NUMBER_OF_LETTERS * NUMBER_OF_COMPONENTS * SIGNAL_COLUMNS;
     // signal display
     public const string INPUT = "";
     public const string OUTPUT = "";

@@ -64,6 +64,7 @@ public class EnigmaMachine : MonoBehaviour
     public TMP_Text messageText;
     public TMP_Text cipherText;
 
+    [Header("--- ENIGMA COMPONENTS ---")]
     public TMP_Text[] keyboard_Alphabet;
 
     public TMP_Text[] plugboard_LeftAlphabet;
@@ -82,6 +83,29 @@ public class EnigmaMachine : MonoBehaviour
     public TMP_Text[] reflector_RightAlphabet;
 
     public TMP_Text[] lampboard_Alphabet;
+
+    // ui signal connectors
+    [Header("--- SIGNAL CONNECTORS ---")]
+    public Transform[] signalPath;
+
+    public Transform[] keyboard_SignalConnectorPoints;
+
+    public Transform[] plugboard_LeftSignalConnectorPoints;
+    public Transform[] plugboard_RightSignalConnectorPoints;
+
+    public Transform[] rotorI_LeftSignalConnectorPoints;
+    public Transform[] rotorI_RightSignalConnectorPoints;
+
+    public Transform[] rotorII_LeftSignalConnectorPoints;
+    public Transform[] rotorII_RightSignalConnectorPoints;
+
+    public Transform[] rotorIII_LeftSignalConnectorPoints;
+    public Transform[] rotorIII_RightSignalConnectorPoints;
+
+    public Transform[] reflector_LeftSignalConnectorPoints;
+    public Transform[] reflector_RightSignalConnectorPoints;
+
+    public Transform[] lampboard_SignalConnectorPoints;
 
 
 
@@ -109,6 +133,8 @@ public class EnigmaMachine : MonoBehaviour
     {
         if (canInput)
         {
+            EnigmaController.instance.display.User_Interface_();
+
             input.text = input.text.ToUpper();
 
             inputLetter = input.text;
@@ -124,15 +150,7 @@ public class EnigmaMachine : MonoBehaviour
                 return;
             }
 
-            outputLetter = EnigmaController.instance.encoder.Encoder_Encipher_Message_(inputLetter);
-
-            cipher = outputLetter;
-
-            cipherText.text += cipher;
-
-            EnigmaController.instance.display.User_Interface_();
-
-            canInput = false;
+            Message_Output_();
         }
     }
 
@@ -145,7 +163,13 @@ public class EnigmaMachine : MonoBehaviour
 
     private void Message_Output_()
     {
+        outputLetter = EnigmaController.instance.encoder.Encoder_Encipher_Message_(inputLetter);
 
+        cipher = outputLetter;
+
+        cipherText.text += cipher;
+
+        canInput = false;
     }
 
 
@@ -181,6 +205,10 @@ public class EnigmaMachine : MonoBehaviour
 
         reflector_left = new string[Settings.NUMBER_OF_REFLECTORS];
         reflector_right = new string[Settings.NUMBER_OF_REFLECTORS];
+
+
+        // signal path
+        signalPath = new Transform[Settings.NUMBER_OF_SIGNAL_CONNECTOR_POINTS];
     }
 
 

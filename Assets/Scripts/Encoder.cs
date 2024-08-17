@@ -73,15 +73,34 @@ public class Encoder : MonoBehaviour
         // keyboard input
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.keyboard.Input_Letter_(letter);
 
+        /*EnigmaController.instance.signalPath.signalPath[EnigmaController.instance.enigmaMachine.signal] = 
+            EnigmaController.instance.enigmaMachine.keyboard_SignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal];/*
+
 
         // plugboard input
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.plugboard.Input_Signal_(EnigmaController.instance.enigmaMachine.signal);
 
+        /*EnigmaController.instance.signalPath.signalPath[EnigmaController.instance.enigmaMachine.signal] =
+            EnigmaController.instance.enigmaMachine.plugboard_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal];*/
+
 
         // rotors input
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Input_Signal_(EnigmaController.instance.enigmaMachine.rotor_iii, EnigmaController.instance.enigmaMachine.signal);
+
+        /*EnigmaController.instance.signalPath.signalPath[EnigmaController.instance.enigmaMachine.signal] =
+            EnigmaController.instance.enigmaMachine.rotorIII_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal];*/
+
+
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Input_Signal_(EnigmaController.instance.enigmaMachine.rotor_ii, EnigmaController.instance.enigmaMachine.signal);
+
+        /*EnigmaController.instance.signalPath.signalPath[EnigmaController.instance.enigmaMachine.signal] =
+            EnigmaController.instance.enigmaMachine.rotorII_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal];*/
+
+
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Input_Signal_(EnigmaController.instance.enigmaMachine.rotor_i, EnigmaController.instance.enigmaMachine.signal);
+
+        /*EnigmaController.instance.signalPath.signalPath[EnigmaController.instance.enigmaMachine.signal] =
+            EnigmaController.instance.enigmaMachine.rotorI_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal];*/
 
 
         // reflector input / output

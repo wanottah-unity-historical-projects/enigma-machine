@@ -15,7 +15,7 @@ public class LineController : MonoBehaviour
     private LineRenderer lineRenderer;
 
     // line renderer connector points
-    private Transform[] points;
+    private Transform[] lineConnectorPoints;
 
 
     // set reference to line renderer
@@ -27,19 +27,19 @@ public class LineController : MonoBehaviour
 
     private void Update()
     {
-        for (int i = 0; i < points.Length; i++ )
+        for (int i = 0; i < lineConnectorPoints.Length; i++ )
         {
-            lineRenderer.SetPosition(i, points[i].position);
+            lineRenderer.SetPosition(i, lineConnectorPoints[i].position);
         }
     }
 
 
     // store points to draw line
-    public void SetLineConnectorPoints(Transform[] points)
+    public void SetLineConnectorPoints(Transform[] signalPathPoints)
     {
-        lineRenderer.positionCount = points.Length;
+        lineRenderer.positionCount = signalPathPoints.Length;
 
-        this.points = points;
+        lineConnectorPoints = signalPathPoints;
     }
 
 }

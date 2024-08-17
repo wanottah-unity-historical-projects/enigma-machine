@@ -19,6 +19,8 @@ public class EnigmaController : MonoBehaviour
 
     public DisplayInterface display { get; private set; }
 
+    public DrawSignal signalPath { get; private set; }
+
     public Keyboard keyboard { get; private set; }
 
     public Plugboard plugboard { get; private set; }
@@ -48,6 +50,8 @@ public class EnigmaController : MonoBehaviour
         enigmaMachine = GetComponentInChildren<EnigmaMachine>();
 
         display = GetComponentInChildren<DisplayInterface>();
+
+        signalPath = GetComponentInChildren<DrawSignal>();
 
         keyboard = GetComponentInChildren<Keyboard>();
 

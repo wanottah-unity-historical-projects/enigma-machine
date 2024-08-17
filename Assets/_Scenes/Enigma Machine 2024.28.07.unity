@@ -285,7 +285,7 @@ Transform:
   - {fileID: 900455963}
   - {fileID: 499812471}
   m_Father: {fileID: 1327494658}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3907560
 GameObject:
@@ -2851,7 +2851,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 633472313}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &129030575
 MonoBehaviour:
@@ -4401,7 +4401,7 @@ Transform:
   - {fileID: 1316721875}
   - {fileID: 1079564682}
   m_Father: {fileID: 1327494658}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &210834842
 GameObject:
@@ -15611,12 +15611,14 @@ Transform:
   m_Children:
   - {fileID: 1183513448}
   - {fileID: 1444832373}
+  - {fileID: 1327494658}
+  - {fileID: 2146817206}
   - {fileID: 1051087283}
   - {fileID: 1330653188}
   - {fileID: 129030574}
-  - {fileID: 1947752161}
   - {fileID: 1769871285}
   - {fileID: 1852651106}
+  - {fileID: 1947752161}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19680,7 +19682,7 @@ Transform:
   - {fileID: 20246365}
   - {fileID: 1030362183}
   m_Father: {fileID: 1327494658}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779486670
 GameObject:
@@ -24315,7 +24317,7 @@ Transform:
   - {fileID: 432765324}
   - {fileID: 1798326671}
   m_Father: {fileID: 1327494658}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &946409610
 GameObject:
@@ -24773,7 +24775,7 @@ Transform:
   - {fileID: 27430790}
   - {fileID: 1952314114}
   m_Father: {fileID: 1327494658}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969647979
 GameObject:
@@ -26839,7 +26841,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 633472313}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1051087284
 MonoBehaviour:
@@ -30326,6 +30328,331 @@ MonoBehaviour:
   - {fileID: 1428810877}
   - {fileID: 796719427}
   - {fileID: 2000510645}
+  signalPath: []
+  keyboard_SignalConnectorPoints:
+  - {fileID: 340619618}
+  - {fileID: 1273804628}
+  - {fileID: 1606933996}
+  - {fileID: 1341312227}
+  - {fileID: 1975752700}
+  - {fileID: 486051635}
+  - {fileID: 335145883}
+  - {fileID: 469741141}
+  - {fileID: 892876772}
+  - {fileID: 1503343967}
+  - {fileID: 1815247979}
+  - {fileID: 2005842223}
+  - {fileID: 866951595}
+  - {fileID: 17208934}
+  - {fileID: 2114447284}
+  - {fileID: 689817428}
+  - {fileID: 745789997}
+  - {fileID: 1611358496}
+  - {fileID: 1757613801}
+  - {fileID: 2025777676}
+  - {fileID: 336258822}
+  - {fileID: 1516440335}
+  - {fileID: 812752658}
+  - {fileID: 1247555070}
+  - {fileID: 27430790}
+  - {fileID: 1952314114}
+  plugboard_LeftSignalConnectorPoints:
+  - {fileID: 1749195931}
+  - {fileID: 1234249643}
+  - {fileID: 1918792516}
+  - {fileID: 222278607}
+  - {fileID: 732488637}
+  - {fileID: 2015740363}
+  - {fileID: 1198323451}
+  - {fileID: 936103281}
+  - {fileID: 220364449}
+  - {fileID: 1686398363}
+  - {fileID: 1927188674}
+  - {fileID: 368736889}
+  - {fileID: 1835250190}
+  - {fileID: 545594321}
+  - {fileID: 1056160001}
+  - {fileID: 937856848}
+  - {fileID: 884760367}
+  - {fileID: 1991832962}
+  - {fileID: 835935623}
+  - {fileID: 682753605}
+  - {fileID: 1674420575}
+  - {fileID: 549717377}
+  - {fileID: 387801529}
+  - {fileID: 2004399785}
+  - {fileID: 621601242}
+  - {fileID: 394146907}
+  plugboard_RightSignalConnectorPoints:
+  - {fileID: 112789574}
+  - {fileID: 393617883}
+  - {fileID: 391127647}
+  - {fileID: 289860291}
+  - {fileID: 1247367019}
+  - {fileID: 494582626}
+  - {fileID: 1952350659}
+  - {fileID: 1627011788}
+  - {fileID: 1071578791}
+  - {fileID: 1052066252}
+  - {fileID: 1363682586}
+  - {fileID: 95791736}
+  - {fileID: 562173095}
+  - {fileID: 1948766522}
+  - {fileID: 822495218}
+  - {fileID: 1128923637}
+  - {fileID: 1346308890}
+  - {fileID: 1607484887}
+  - {fileID: 2064837551}
+  - {fileID: 631124058}
+  - {fileID: 587303772}
+  - {fileID: 41417518}
+  - {fileID: 1874482536}
+  - {fileID: 775295862}
+  - {fileID: 942064548}
+  - {fileID: 1533537372}
+  rotorI_LeftSignalConnectorPoints:
+  - {fileID: 1894943262}
+  - {fileID: 254615957}
+  - {fileID: 76659111}
+  - {fileID: 1913571373}
+  - {fileID: 732985949}
+  - {fileID: 487783169}
+  - {fileID: 709366314}
+  - {fileID: 1498242166}
+  - {fileID: 1125952287}
+  - {fileID: 1178994443}
+  - {fileID: 1480679164}
+  - {fileID: 1948049881}
+  - {fileID: 1130360479}
+  - {fileID: 765961438}
+  - {fileID: 1427755670}
+  - {fileID: 277516319}
+  - {fileID: 2124495534}
+  - {fileID: 146253681}
+  - {fileID: 1139803746}
+  - {fileID: 241746064}
+  - {fileID: 912546197}
+  - {fileID: 1088900991}
+  - {fileID: 1508968043}
+  - {fileID: 1281437556}
+  - {fileID: 1240295593}
+  - {fileID: 726896689}
+  rotorI_RightSignalConnectorPoints:
+  - {fileID: 412523963}
+  - {fileID: 639586589}
+  - {fileID: 1483748312}
+  - {fileID: 1847174930}
+  - {fileID: 536798107}
+  - {fileID: 1300492432}
+  - {fileID: 530068326}
+  - {fileID: 367991860}
+  - {fileID: 1986452612}
+  - {fileID: 1404172681}
+  - {fileID: 415617666}
+  - {fileID: 1779718974}
+  - {fileID: 232426385}
+  - {fileID: 1521367850}
+  - {fileID: 431087430}
+  - {fileID: 873556136}
+  - {fileID: 2027636975}
+  - {fileID: 1218673218}
+  - {fileID: 103128049}
+  - {fileID: 282439897}
+  - {fileID: 741862428}
+  - {fileID: 275292631}
+  - {fileID: 883688987}
+  - {fileID: 1632538577}
+  - {fileID: 1472571647}
+  - {fileID: 60636119}
+  rotorII_LeftSignalConnectorPoints:
+  - {fileID: 938627670}
+  - {fileID: 502736938}
+  - {fileID: 570385644}
+  - {fileID: 2076380161}
+  - {fileID: 521160562}
+  - {fileID: 1729449668}
+  - {fileID: 2061922228}
+  - {fileID: 752308214}
+  - {fileID: 1654517717}
+  - {fileID: 2127568457}
+  - {fileID: 1275298409}
+  - {fileID: 1510352695}
+  - {fileID: 3907561}
+  - {fileID: 1961530136}
+  - {fileID: 1073678931}
+  - {fileID: 561946980}
+  - {fileID: 1150947906}
+  - {fileID: 210834843}
+  - {fileID: 996226255}
+  - {fileID: 1491580510}
+  - {fileID: 1539005541}
+  - {fileID: 1977137418}
+  - {fileID: 2050710656}
+  - {fileID: 345137837}
+  - {fileID: 1768809942}
+  - {fileID: 192614510}
+  rotorII_RightSignalConnectorPoints:
+  - {fileID: 1187461953}
+  - {fileID: 14434260}
+  - {fileID: 468651414}
+  - {fileID: 75996714}
+  - {fileID: 2027228909}
+  - {fileID: 1209256840}
+  - {fileID: 339712307}
+  - {fileID: 729670099}
+  - {fileID: 1549626195}
+  - {fileID: 1776173009}
+  - {fileID: 813677968}
+  - {fileID: 1957052069}
+  - {fileID: 1487959767}
+  - {fileID: 1570073289}
+  - {fileID: 1599359950}
+  - {fileID: 933492589}
+  - {fileID: 530204128}
+  - {fileID: 2058687397}
+  - {fileID: 1899311474}
+  - {fileID: 588674618}
+  - {fileID: 1700846200}
+  - {fileID: 1521573712}
+  - {fileID: 98167817}
+  - {fileID: 1462130940}
+  - {fileID: 217569419}
+  - {fileID: 727046000}
+  rotorIII_LeftSignalConnectorPoints:
+  - {fileID: 356526546}
+  - {fileID: 1421642006}
+  - {fileID: 1310667334}
+  - {fileID: 544986723}
+  - {fileID: 17429717}
+  - {fileID: 334154903}
+  - {fileID: 1436250415}
+  - {fileID: 1925707489}
+  - {fileID: 530631436}
+  - {fileID: 1785512255}
+  - {fileID: 297942239}
+  - {fileID: 403381198}
+  - {fileID: 1138938996}
+  - {fileID: 1202447336}
+  - {fileID: 436576943}
+  - {fileID: 1642870500}
+  - {fileID: 537514306}
+  - {fileID: 981808634}
+  - {fileID: 1940936193}
+  - {fileID: 1519298965}
+  - {fileID: 1250014631}
+  - {fileID: 1704991769}
+  - {fileID: 504152542}
+  - {fileID: 963835262}
+  - {fileID: 1262354187}
+  - {fileID: 405536907}
+  rotorIII_RightSignalConnectorPoints:
+  - {fileID: 2100282125}
+  - {fileID: 1058308183}
+  - {fileID: 1003628786}
+  - {fileID: 1013901828}
+  - {fileID: 1152519300}
+  - {fileID: 910014396}
+  - {fileID: 609496619}
+  - {fileID: 1776763968}
+  - {fileID: 1438227380}
+  - {fileID: 549427525}
+  - {fileID: 230031541}
+  - {fileID: 1620357071}
+  - {fileID: 638451313}
+  - {fileID: 1897759959}
+  - {fileID: 1220492477}
+  - {fileID: 766280348}
+  - {fileID: 597916381}
+  - {fileID: 511812843}
+  - {fileID: 796261182}
+  - {fileID: 1716302812}
+  - {fileID: 1862764334}
+  - {fileID: 1843028139}
+  - {fileID: 655444497}
+  - {fileID: 774963803}
+  - {fileID: 483821930}
+  - {fileID: 1372781738}
+  reflector_LeftSignalConnectorPoints:
+  - {fileID: 2139022245}
+  - {fileID: 1876944762}
+  - {fileID: 1395505104}
+  - {fileID: 904110137}
+  - {fileID: 883967554}
+  - {fileID: 104638091}
+  - {fileID: 235919285}
+  - {fileID: 1598905807}
+  - {fileID: 486089729}
+  - {fileID: 955743393}
+  - {fileID: 632474542}
+  - {fileID: 1833216444}
+  - {fileID: 312077669}
+  - {fileID: 287517502}
+  - {fileID: 997436171}
+  - {fileID: 1588909448}
+  - {fileID: 354621928}
+  - {fileID: 1073497068}
+  - {fileID: 1950229220}
+  - {fileID: 2096843276}
+  - {fileID: 72792204}
+  - {fileID: 1442868954}
+  - {fileID: 467468233}
+  - {fileID: 1950622362}
+  - {fileID: 33879028}
+  - {fileID: 256971764}
+  reflector_RightSignalConnectorPoints:
+  - {fileID: 1801327983}
+  - {fileID: 1722641405}
+  - {fileID: 1508986147}
+  - {fileID: 1411086133}
+  - {fileID: 791689052}
+  - {fileID: 2026087333}
+  - {fileID: 1053595523}
+  - {fileID: 325350333}
+  - {fileID: 1245458207}
+  - {fileID: 1174740957}
+  - {fileID: 257497724}
+  - {fileID: 261327649}
+  - {fileID: 1807514774}
+  - {fileID: 1237215583}
+  - {fileID: 1593915816}
+  - {fileID: 119088204}
+  - {fileID: 406613892}
+  - {fileID: 116356588}
+  - {fileID: 1291339657}
+  - {fileID: 1604177727}
+  - {fileID: 1178282126}
+  - {fileID: 1753933183}
+  - {fileID: 1547787245}
+  - {fileID: 386650890}
+  - {fileID: 280332137}
+  - {fileID: 1659003750}
+  lampboard_SignalConnectorPoints:
+  - {fileID: 78367924}
+  - {fileID: 1923633462}
+  - {fileID: 10290925}
+  - {fileID: 1489478569}
+  - {fileID: 1007753651}
+  - {fileID: 743250924}
+  - {fileID: 434720118}
+  - {fileID: 1827122194}
+  - {fileID: 1826664131}
+  - {fileID: 858770868}
+  - {fileID: 549331811}
+  - {fileID: 1091096043}
+  - {fileID: 554245320}
+  - {fileID: 1874392307}
+  - {fileID: 508392769}
+  - {fileID: 2112788818}
+  - {fileID: 1819888716}
+  - {fileID: 188635863}
+  - {fileID: 1140072164}
+  - {fileID: 1396453187}
+  - {fileID: 1770035101}
+  - {fileID: 2009624172}
+  - {fileID: 849023947}
+  - {fileID: 436167894}
+  - {fileID: 1060639602}
+  - {fileID: 323038752}
 --- !u!4 &1183513448
 Transform:
   m_ObjectHideFlags: 0
@@ -30336,8 +30663,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1327494658}
+  m_Children: []
   m_Father: {fileID: 633472313}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35085,7 +35411,7 @@ GameObject:
   - component: {fileID: 1327494658}
   - component: {fileID: 1327494659}
   m_Layer: 0
-  m_Name: Line Connectors
+  m_Name: Signal Connectors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35102,16 +35428,15 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2146817206}
   - {fileID: 965233779}
-  - {fileID: 1956509495}
   - {fileID: 205005637}
   - {fileID: 3131407}
   - {fileID: 2039456318}
   - {fileID: 779136275}
   - {fileID: 946095011}
-  m_Father: {fileID: 1183513448}
-  m_RootOrder: 0
+  - {fileID: 1956509495}
+  m_Father: {fileID: 633472313}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1327494659
 MonoBehaviour:
@@ -35125,7 +35450,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f4eb6921e79dcd4bb6ebec2421eb907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: []
   lineController: {fileID: 2146817207}
 --- !u!1 &1330653187
 GameObject:
@@ -35156,7 +35480,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 633472313}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1330653189
 MonoBehaviour:
@@ -47200,7 +47524,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 633472313}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1769871286
 MonoBehaviour:
@@ -50266,7 +50590,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 633472313}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1852651107
 MonoBehaviour:
@@ -52484,7 +52808,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 633472313}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1947752162
 MonoBehaviour:
@@ -53061,7 +53385,7 @@ Transform:
   - {fileID: 1060639602}
   - {fileID: 323038752}
   m_Father: {fileID: 1327494658}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1957052068
 GameObject:
@@ -55154,7 +55478,7 @@ Transform:
   - {fileID: 1050854878}
   - {fileID: 761532502}
   m_Father: {fileID: 1327494658}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2050710655
 GameObject:
@@ -56786,8 +57110,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1327494658}
-  m_RootOrder: 0
+  m_Father: {fileID: 633472313}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2146817207
 MonoBehaviour:
