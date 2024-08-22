@@ -1,23 +1,25 @@
 ﻿
+using System.Collections.Generic;
 using UnityEngine;
 
 
 //
 // Enigma Machine 2024.07.28
 //
-// v2024.08.17
+// v2024.08.22
 //
 
 
 public class DrawSignal : MonoBehaviour
 {
-    //public Transform[] signalPath = new Transform[Settings.NUMBER_OF_SIGNAL_CONNECTOR_POINTS];
+    //public List<Transform> lineConnectorPoints;
 
-    [SerializeField] private LineController lineController;
+    public SignalController signalController;
+
 
     private void Start()
     {
-        lineController.SetLineConnectorPoints(EnigmaController.instance.enigmaMachine.signalPath);
+        signalController.SetLineConnectorPoints(Settings.PATH); // lineConnectorPoints);    
     }
 
 }

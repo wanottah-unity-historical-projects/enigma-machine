@@ -1,11 +1,12 @@
 ﻿
+using System.Collections.Generic;
 using UnityEngine;
 
 
 //
 // Enigma Machine 2024.07.28
 //
-// v2024.08.17
+// v2024.08.22
 //
 
 
@@ -66,18 +67,25 @@ public class Settings : MonoBehaviour
     // COMPONENT_SPACING = 100;
 
 
-    // signal columns
-    // 1 x keyboard component
-    // 1 x lampboard component
-    // 2 x plugboard component
-    // 2 x 5 rotor components
-    // 2 x reflector component
-    public const int SIGNAL_COLUMNS = 16;
-    public const int NUMBER_OF_SIGNAL_CONNECTOR_POINTS = NUMBER_OF_LETTERS * NUMBER_OF_COMPONENTS * SIGNAL_COLUMNS;
+    // signal connectors
+    public const int KEYBOARD_COMPONENT  = 1;
+    public const int PLUGBOARD_COMPONENT = 2;
+    public const int THREE_ROTOR_COMPONENT     = 6;
+    // public const int FIVE_ROTOR_COMPONENT = 10;
+    public const int REFLECTOR_COMPONENT = 3;
+    public const int LAMPBOARD_COMPONENT = 1;
+    public const int NUMBER_OF_SIGNAL_CONNECTOR_POINTS = 1 * KEYBOARD_COMPONENT +
+                                                         2 * PLUGBOARD_COMPONENT +
+                                                         2 * THREE_ROTOR_COMPONENT +
+                                                         1 * REFLECTOR_COMPONENT +
+                                                         1 * LAMPBOARD_COMPONENT;
     // signal display
     public const string INPUT = "";
     public const string OUTPUT = "";
     public const string SPACE = " ";
+
+    public static List<Transform> PATH = new List<Transform>();
+
     // PATH = [];
     public const int CIPHER_CHARACTERS = 5;  // 4;
     public const string CIPHER = "";

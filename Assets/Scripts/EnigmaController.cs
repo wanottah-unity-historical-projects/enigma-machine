@@ -5,7 +5,7 @@ using UnityEngine;
 //
 // Enigma Machine 2024.07.28
 //
-// v2024.08.16
+// v2024.08.22
 //
 
 
@@ -19,7 +19,7 @@ public class EnigmaController : MonoBehaviour
 
     public DisplayInterface display { get; private set; }
 
-    public DrawSignal signalPath { get; private set; }
+    public SignalController signalController { get; private set; }
 
     public Keyboard keyboard { get; private set; }
 
@@ -51,7 +51,7 @@ public class EnigmaController : MonoBehaviour
 
         display = GetComponentInChildren<DisplayInterface>();
 
-        signalPath = GetComponentInChildren<DrawSignal>();
+        signalController = GetComponentInChildren<SignalController>();
 
         keyboard = GetComponentInChildren<Keyboard>();
 
