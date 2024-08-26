@@ -69,34 +69,80 @@ public class Rotor : MonoBehaviour
                 // get all characters from the second position of string 'left' (position 1) to the end of string 'left' 
                 // add the first character to the end of string 'left'
                 //rotatedAlphabet = left.Substring(1, left.Length - 1) + left.Substring(0, 1);
-                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(Settings.letterB, EnigmaController.instance.enigmaMachine.rotor_left[rotor].Length - 1) +
-                                  EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(Settings.letterA, 1);
+                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(
+                                                                                                        Settings.LETTER_B, 
+                                                                                                        EnigmaController.instance.enigmaMachine.rotor_left[rotor].Length - 1
+                                                                                                     ) +
+                                  EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(
+                                                                                                        Settings.LETTER_A, 1
+                                                                                                     );
 
                 EnigmaController.instance.enigmaMachine.rotor_left[rotor] = rotatedAlphabet;
 
+                for (int character = 0; character < Settings.ALPHABET.Length; character++)
+                {
+                    EnigmaController.instance.enigmaMachine.keyboard_Alphabet[character].text = rotatedAlphabet[character].ToString();
+                }
+
+                EnigmaController.instance.display.User_Interface_();
+
                 // get all characters from the second position of string 'right' (position 1) to the end of string 'right' 
                 // add the first character to the end of string 'right'
-                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(Settings.letterB, EnigmaController.instance.enigmaMachine.rotor_right[rotor].Length - 1) +
-                                  EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(Settings.letterA, 1);
+                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(
+                                                                                                        Settings.LETTER_B, 
+                                                                                                        EnigmaController.instance.enigmaMachine.rotor_right[rotor].Length - 1
+                                                                                                      ) +
+                                  EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(
+                                                                                                        Settings.LETTER_A, 1
+                                                                                                      );
 
                 EnigmaController.instance.enigmaMachine.rotor_right[rotor] = rotatedAlphabet;
+
+                for (int character = 0; character < Settings.ALPHABET.Length; character++)
+                {
+                    EnigmaController.instance.enigmaMachine.keyboard_Alphabet[character].text = rotatedAlphabet[character].ToString();
+                }
+
+                EnigmaController.instance.display.User_Interface_();
             }
 
             else
             {
                 // get all characters from the second position of string 'left' (position 1) to the end of string 'left' 
                 // add the first character to the end of string 'left'
-                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(Settings.letterZ, 1) +
-                                  EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(EnigmaController.instance.enigmaMachine.rotor_left[rotor].Length - 1, 1);
+                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(
+                                                                                                        Settings.LETTER_Z, 1
+                                                                                                     ) +
+                                  EnigmaController.instance.enigmaMachine.rotor_left[rotor].Substring(
+                                                                                                        EnigmaController.instance.enigmaMachine.rotor_left[rotor].Length - 1, 1
+                                                                                                     );
 
                 EnigmaController.instance.enigmaMachine.rotor_left[rotor] = rotatedAlphabet;
 
+                for (int character = 0; character < Settings.ALPHABET.Length; character++)
+                {
+                    EnigmaController.instance.enigmaMachine.keyboard_Alphabet[character].text = rotatedAlphabet[character].ToString();
+                }
+
+                EnigmaController.instance.display.User_Interface_();
+
                 // get all characters from the second position of string 'right' (position 1) to the end of string 'right' 
                 // add the first character to the end of string 'right'
-                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(Settings.letterZ, 1) +
-                                  EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(EnigmaController.instance.enigmaMachine.rotor_right[rotor].Length - 1, 1);
+                rotatedAlphabet = EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(
+                                                                                                        Settings.LETTER_Z, 1
+                                                                                                      ) +
+                                  EnigmaController.instance.enigmaMachine.rotor_right[rotor].Substring(
+                                                                                                        EnigmaController.instance.enigmaMachine.rotor_right[rotor].Length - 1, 1
+                                                                                                      );
 
                 EnigmaController.instance.enigmaMachine.rotor_right[rotor] = rotatedAlphabet;
+
+                for (int character = 0; character < Settings.ALPHABET.Length; character++)
+                {
+                    EnigmaController.instance.enigmaMachine.keyboard_Alphabet[character].text = rotatedAlphabet[character].ToString();
+                }
+
+                EnigmaController.instance.display.User_Interface_();
             }
         }
     }

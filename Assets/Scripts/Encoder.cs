@@ -5,7 +5,7 @@ using UnityEngine;
 
 // Enigma Machine 2024.07.28
 //
-// v2024.08.22
+// v2024.08.26
 //
 
 
@@ -71,13 +71,15 @@ public class Encoder : MonoBehaviour
         Encoder_Rotate_Rotors_();
 
 
-        int positionIndex = 0;
+        // initialise line position index
+        //int positionIndex = -1;
 
 
         // keyboard input
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.keyboard.Input_Letter_(letter);
 
 
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -87,13 +89,14 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.plugboard_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.plugboard_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         // plugboard input
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.plugboard.Input_Signal_(EnigmaController.instance.enigmaMachine.signal);
 
-        positionIndex += 1;
+
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
         
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -103,14 +106,14 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.rotorIII_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.rotorIII_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         // rotors input
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Input_Signal_(EnigmaController.instance.enigmaMachine.rotor_iii, EnigmaController.instance.enigmaMachine.signal);
 
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -121,13 +124,13 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.rotorII_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.rotorII_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Input_Signal_(EnigmaController.instance.enigmaMachine.rotor_ii, EnigmaController.instance.enigmaMachine.signal);
 
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -137,13 +140,13 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.rotorI_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.rotorI_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Input_Signal_(EnigmaController.instance.enigmaMachine.rotor_i, EnigmaController.instance.enigmaMachine.signal);
 
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -153,14 +156,14 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.reflector_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.reflector_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         // reflector input / output
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.reflector.Reflector_Reflected_Signal_(EnigmaController.instance.enigmaMachine.reflector_type, EnigmaController.instance.enigmaMachine.signal);
 
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -176,14 +179,14 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.rotorI_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.rotorI_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         // rotors output
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Output_Signal_(EnigmaController.instance.enigmaMachine.rotor_i, EnigmaController.instance.enigmaMachine.signal);
 
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -193,13 +196,13 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.rotorII_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.rotorII_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Output_Signal_(EnigmaController.instance.enigmaMachine.rotor_ii, EnigmaController.instance.enigmaMachine.signal);
 
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -209,12 +212,13 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.rotorIII_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.rotorIII_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.rotor.Rotor_Output_Signal_(EnigmaController.instance.enigmaMachine.rotor_iii, EnigmaController.instance.enigmaMachine.signal);
 
-        positionIndex += 1;
+
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
@@ -224,28 +228,32 @@ public class Encoder : MonoBehaviour
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.plugboard_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.plugboard_LeftSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         // plugboard output
         EnigmaController.instance.enigmaMachine.signal = EnigmaController.instance.plugboard.Output_Signal_(EnigmaController.instance.enigmaMachine.signal);
 
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.plugboard_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.plugboard_RightSignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
 
 
         // lampboard output
         EnigmaController.instance.enigmaMachine.outputLetter = EnigmaController.instance.lampboard.Output_Letter_(EnigmaController.instance.enigmaMachine.signal);
 
-        positionIndex += 1;
+        /*positionIndex += 1;
         EnigmaController.instance.signalController.lineRenderer.positionCount = positionIndex + 1;
 
         EnigmaController.instance.signalController.lineRenderer.SetPosition
-            (positionIndex, EnigmaController.instance.enigmaMachine.lampboard_SignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);
+            (positionIndex, EnigmaController.instance.enigmaMachine.lampboard_SignalConnectorPoints[EnigmaController.instance.enigmaMachine.signal].position);*/
+
+
+        // set the signal colour
+        //Set_Signal_Colour();
 
 
         return EnigmaController.instance.enigmaMachine.outputLetter;
@@ -295,6 +303,32 @@ public class Encoder : MonoBehaviour
         {
             EnigmaController.instance.rotor.Rotor_Rotate_Rotor_(EnigmaController.instance.enigmaMachine.rotor_iii);
         }
+    }
+
+
+    // set the signal line colour
+    private void Set_Signal_Colour()
+    {
+        float alpha = 1.0f;
+
+        Gradient gradient = new Gradient();
+
+        gradient.SetKeys(
+                            new GradientColorKey[] 
+                            { 
+                                new GradientColorKey(Settings.INPUT_SIGNAL_COLOUR, 0.0f), 
+                                new GradientColorKey(Settings.REFLECTOR_SIGNAL_COLOUR, 0.5f), 
+                                new GradientColorKey(Settings.OUTPUT_SIGNAL_COLOUR, 1.0f) 
+                            },
+            
+                            new GradientAlphaKey[] 
+                            { 
+                                //new GradientAlphaKey(alpha, 0.0f), 
+                                new GradientAlphaKey(alpha, 1.0f) 
+                            }
+                        );
+
+        EnigmaController.instance.signalController.lineRenderer.colorGradient = gradient;
     }
 
 }

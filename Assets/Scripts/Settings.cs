@@ -6,7 +6,7 @@ using UnityEngine;
 //
 // Enigma Machine 2024.07.28
 //
-// v2024.08.22
+// v2024.08.26
 //
 
 
@@ -23,9 +23,9 @@ public class Settings : MonoBehaviour
     
 
     // index position for letters
-    public const int letterA = 0;
-    public const int letterB = 1;
-    public const int letterZ = 25;
+    public const int LETTER_A = 0;
+    public const int LETTER_B = 1;
+    public const int LETTER_Z = 25;
 
 
     // rotors
@@ -86,7 +86,10 @@ public class Settings : MonoBehaviour
 
     public static List<Transform> PATH = new List<Transform>();
 
-    // PATH = [];
+    public static Color INPUT_SIGNAL_COLOUR = Color.green;
+    public static Color REFLECTOR_SIGNAL_COLOUR = Color.yellow;
+    public static Color OUTPUT_SIGNAL_COLOUR = Color.red;
+
     public const int CIPHER_CHARACTERS = 5;  // 4;
     public const string CIPHER = "";
 

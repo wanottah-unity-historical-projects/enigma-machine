@@ -7,7 +7,7 @@ using TMPro;
 //
 // Enigma Machine 2024.07.28
 //
-// v2024.08.17
+// v2024.08.26
 //
 
 
@@ -133,8 +133,6 @@ public class EnigmaMachine : MonoBehaviour
     {
         if (canInput)
         {
-            EnigmaController.instance.display.User_Interface_();
-
             input.text = input.text.ToUpper();
 
             inputLetter = input.text;
